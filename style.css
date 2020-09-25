@@ -12,35 +12,31 @@
 img {
   width: 25rem;
 }
-#nav-bar {
+#nav-bar, #nav-bar ul{
   margin: auto;
-}
-
-#nav-bar ul {
   display: flex;
   list-style-type: none;
 }
+
 #nav-bar li {
   display: flex;
-  padding: 50px 50px 50px 50px;
+  margin:  50px 50px 50px 50px;
+  width: 100px;
 }
 .nav-link {
   text-decoration: none;
   text-align: center;
+  color: rgb(97, 97, 97);
 }
 
 @media screen and (max-width: 800px) {
-  #header {
+  #header,  #nav-bar ul{
     display: flex;
     flex-direction: column;
   }
-  #nav-bar ul {
-    flex-direction: column;
-    
-  }
+ 
   #nav-bar li {
-    padding: 0;
-    display: flex;
+    margin: 0;
     justify-content: center;
   }
 
