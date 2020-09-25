@@ -1,3 +1,4 @@
+/* Remove all defaul margin and padding and use the box model so the no elements or divs overflow */
 * {
   margin: 0;
   padding: 0;
@@ -7,42 +8,41 @@
 #header {
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 
 img {
   width: 25rem;
 }
-#nav-bar,
-ul {
+/* Make the nav-bar margin auto so that its centered of the div */
+#nav-bar {
   margin: auto;
+}
+/* Target all the uls in the nav-bar */
+#nav-bar ul {
   display: flex;
   list-style-type: none;
+  color: aquamarine;
 }
 
 .nav-link {
   text-decoration: none;
   text-align: center;
   color: rgb(97, 97, 97);
-  display: flex;
   margin: 50px 50px 50px 50px;
   width: 100px;
 }
-
+/* Make the header and all the uls in the nav-bar to display as a column and centered 
+in a display thats less than 800px*/
 @media screen and (max-width: 800px) {
   #header,
   #nav-bar ul {
-    display: flex;
     flex-direction: column;
-  }
-
-  .nav-link {
-    margin: 0;
-    justify-content: center;
-  }
-
-  img {
-    width: 21rem;
-    margin: 10px 0px 10px 0px;
     text-align: center;
+    margin-top: 15px;
+  }
+  /* Make the image smaller */
+  img {
+    width: 19rem;
   }
 }
