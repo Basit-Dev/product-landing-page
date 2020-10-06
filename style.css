@@ -3,16 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #header {
   display: flex;
   align-items: center;
   margin-top: 30px;
+  position: fixed;
+  width: 100%;
 }
 
-img {
-  width: 25rem;
+#header-img {
+  width: 22rem;
 }
 /* Make the nav-bar margin auto so that its centered of the div */
 #nav-bar {
@@ -22,16 +26,68 @@ img {
 #nav-bar ul {
   display: flex;
   list-style-type: none;
-  color: aquamarine;
 }
 
 .nav-link {
   text-decoration: none;
   text-align: center;
   color: rgb(97, 97, 97);
-  margin: 50px 50px 50px 50px;
+  margin: 0px 50px 0px 50px;
   width: 100px;
 }
+a:hover {
+  color: rgb(238, 197, 14);
+}
+#intro {
+  position: relative;
+  top: 120px;
+  text-align: center;
+}
+#intro h1 {
+  margin: 15px;
+  font-size: 19pt;
+}
+
+#email {
+  height: 1.5rem;
+  width: 13rem;
+  font-size: 10pt;
+  text-align: center;
+}
+input:focus {
+  outline: none !important;
+  border: solid 2pt rgb(255, 208, 0);
+}
+
+/* Paddingis better for box sizing as it increases or decreases when the text is bigger or smaller */
+#submit {
+  margin: 15px;
+  padding: 2px 12px 2px 12px;
+  font-weight: bold;
+  font-size: 13pt;
+  background-color: rgb(255, 208, 0);
+  border: none;
+}
+
+/* .one {
+  float: right;
+  max-width: 50rem;
+  font-size: 10pt;
+  background-color: aqua;
+}
+.icons {
+  color: orange;
+  
+
+} 
+.wrapper {
+  display: flex;
+  background-color: brown;
+  border: solid;
+  float: center;
+
+}*/
+
 /* Make the header and all the uls in the nav-bar to display as a column and centered 
 in a display thats less than 800px*/
 @media screen and (max-width: 800px) {
@@ -42,7 +98,28 @@ in a display thats less than 800px*/
     margin-top: 15px;
   }
   /* Make the image smaller */
-  img {
+  #header-img {
     width: 19rem;
   }
+  #intro {
+    position: relative;
+    top: 140px;
+    text-align: center;
+  }
+}
+
+#grid {
+  
+  display: flex;
+  position: relative;
+  top: 12rem;
+  }
+
+.box1 {
+  background-color: brown;
+  width: 50%;
+}
+.box2 {
+  background-color: cadetblue;
+  width: 50%;
 }
