@@ -1,72 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://use.fontawesome.com/4a913437d8.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+      <!-- Logo and nav links -->
     <header id="header">
-        <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="logo" />
-        <nav id="nav-bar">
-            <ul>
-                <li>
-                    <a class="nav-link" href="#features">Features</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#work">How It Works</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#price">Pricing</a>
-                </li>
-            </ul>
-        </nav>
+      <img
+        id="header-img"
+        src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+        alt="logo"
+      />
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#work">How It Works</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#price">Pricing</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <!-- Intro text with subscribe field and button -->
     <div id="intro">
-        <h1>Handcrafted, home-made masterpieces</h1>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" name="email" id="email" placeholder="Enter your email address" />
-        </form>
-        <button id="submit">GET STARTED</button>
+      <h1>Handcrafted, home-made masterpieces</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address"
+        />
+      </form>
+      <button id="submit">GET STARTED</button>
     </div>
-    <div id="grid">
-        <div class="box1">
-            <i class="fa fa-3x fa-fire"></i>
-        </div>
-        <div class="box2">
-            <h1 class="intro-heading" id="features">Premium Materials</h1>
-            <p>
-                Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of
-                yourpurchase.
-            </p>
-        </div>
-        <div class="box1">
-            <i class="fa fa-3x fa-truck"></i>
-        </div>
-        <div class="box2">
-            <h1 class="intro-heading" id="features">Fast Shipping</h1>
-            <p>
-                We make sure you recieve your trombone as soon as we have finished making it. We also provide free
-                returns if you are not satisfied.
-            </p>
-        </div>
-        <div class="box1">
-            <i class="fa fa-3x fa-battery-full"></i>
-        </div>
-        <div class="box2">
-            <h1 class="intro-heading" id="features">Quality Assurance</h1>
-            <p>
-                For every purchase you make, we will ensure there are no damages or faults and we will check and
-                test
-                the
-                pitch of your instrument.
-            </p>
-        </div>
-        <!-- <div class="wrapper">wrapper
+    <!-- Section info -->
+    <div id="section">
+      <div class="box1">
+        <i class="fa fa-3x fa-fire"></i>
+      </div>
+      <div class="box2">
+        <h1 class="intro-heading" id="features">Premium Materials</h1>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally. This
+          will increase the longevity of yourpurchase.
+        </p>
+      </div>
+      <div class="box1">
+        <i class="fa fa-3x fa-truck"></i>
+      </div>
+      <div class="box2">
+        <h1 class="intro-heading" id="features">Fast Shipping</h1>
+        <p>
+          We make sure you recieve your trombone as soon as we have finished
+          making it. We also provide free returns if you are not satisfied.
+        </p>
+      </div>
+      <div class="box1">
+        <i class="fa fa-3x fa-battery-full"></i>
+      </div>
+      <div class="box2">
+        <h1 class="intro-heading" id="features">Quality Assurance</h1>
+        <p>
+          For every purchase you make, we will ensure there are no damages or
+          faults and we will check and test the pitch of your instrument.
+        </p>
+      </div>
+      <!-- Video -->
+      <div id="video">
+        <iframe
+          width="560"
+          height="316"
+          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- End of video -->
+    </div>
+    <!-- End of section -->
+    <!-- Price grid -->
+    <div id="grid-wrapper">
+      <div class="grid">
+        <h1>TENOR TROMBONE</h1>
+        <h2>$600</h2>
+        <p class="line-height">
+          Lorem ipsum.<br />
+          Lorem ipsum.<br />
+          Lorem ipsum dolor.<br />
+          Lorem ipsum.
+        </p>
+        <button id="select">SELECT</button>
+      </div>
+      <div class="grid">
+        <h1>BASS TROMBONE</h1>
+        <h2>$900</h2>
+        <p class="line-height">
+          Lorem ipsum.<br />
+          Lorem ipsum.<br />
+          Lorem ipsum dolor.<br />
+          Lorem ipsum.
+        </p>
+        <button id="select">SELECT</button>
+      </div>
+      <div class="grid">
+        <h1>VALVE TROMBONE</h1>
+        <h2>$1200</h2>
+        <p class="line-height">
+          Lorem ipsum.<br />
+          Lorem ipsum.<br />
+          Lorem ipsum dolor.<br />
+          Lorem ipsum.
+        </p>
+        <button id="select">SELECT</button>
+      </div>
+    </div>
+    <!-- End of price grid -->
+    <!-- Footer -->
+    <footer>
+      <nav class="bottom-nav">
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <p>Copyright 2016, Original Trombones</p>
+    </footer>
+    <!--  End of footer -->
+  </body>
+</html>
+
+
+    <!-- <div class="wrapper">wrapper
            <div class="icons">
         <i class="fa fa-3x fa-fire"></i>
     </div>
@@ -104,8 +180,6 @@
                 </p>
             </div>
         </div> -->
-
-    </div>
     <!--
     <video id="video"></video>
 
@@ -166,6 +240,3 @@
         </nav>
         <div class="bottom-nav">Copyright 2016, Original Trombones</div>
     </footer> -->
-</body>
-
-</html>

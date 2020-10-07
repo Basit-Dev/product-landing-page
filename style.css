@@ -59,7 +59,7 @@ input:focus {
   border: solid 2pt rgb(255, 208, 0);
 }
 
-/* Paddingis better for box sizing as it increases or decreases when the text is bigger or smaller */
+/* Padding is better for box sizing as it increases or decreases when the text is bigger or smaller */
 #submit {
   margin: 15px;
   padding: 2px 12px 2px 12px;
@@ -67,6 +67,116 @@ input:focus {
   font-size: 13pt;
   background-color: rgb(255, 208, 0);
   border: none;
+}
+#section {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 12rem;
+}
+
+.box1 {
+  /* background-color: brown; */
+  width: 20%;
+  text-align: end;
+  padding: 20px 70px 20px 20px;
+}
+.box2 {
+  /* background-color: cadetblue; */
+  width: 70%;
+  padding: 20px;
+}
+.box2 h1 {
+  font-size: 18pt;
+}
+.fa {
+  color: orange;
+}
+
+#video {
+  margin: 3% auto 3% auto;
+}
+#grid-wrapper {
+  position: relative;
+  top: 13rem;
+  display: flex;
+  justify-content: center;
+}
+.grid {
+  /* background-color: aqua; */
+  border: solid 1pt;
+  margin: 15px;
+  width: 20%;
+  text-align: center;
+}
+.grid h1 {
+  background-color: rgb(228, 228, 228);
+  font-size: 14pt;
+  padding: 10px;
+}
+.grid h2 {
+  margin: 23px;
+}
+
+.grid p {
+  margin: 15px;
+}
+
+.grid #select {
+  margin: 25px;
+  padding: 10px 30px 10px 30px;
+
+  font-size: 13pt;
+  background-color: rgb(255, 208, 0);
+  border: none;
+}
+footer {
+  width: 65%;
+  margin: auto;
+  padding-block-start: 10px;
+  background-color: rgb(214, 214, 214);
+  position: relative;
+  top: 16rem;
+  text-align: end;
+}
+.bottom-nav ul {
+  list-style: none;
+  padding: 10px;
+}
+.bottom-nav li {
+  display: inline;
+  padding: 5px;
+}
+footer p {
+  padding: 5px 10px 25px 0px;
+  font-size: 11pt;
+}
+/* Make the header and all the uls in the nav-bar to display as a column and centered 
+in a display thats less than 800px*/
+@media screen and (max-width: 800px) {
+  #header,
+  #nav-bar ul {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+  }
+  /* Make the image smaller */
+  #header-img {
+    width: 19rem;
+  }
+  #intro {
+    position: relative;
+    top: 140px;
+    text-align: center;
+  }
+  /* #section {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 12rem;
+  } */
+  
+
 }
 
 /* .one {
@@ -87,53 +197,3 @@ input:focus {
   float: center;
 
 }*/
-
-/* Make the header and all the uls in the nav-bar to display as a column and centered 
-in a display thats less than 800px*/
-@media screen and (max-width: 800px) {
-  #header,
-  #nav-bar ul {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 15px;
-  }
-  /* Make the image smaller */
-  #header-img {
-    width: 19rem;
-  }
-  #intro {
-    position: relative;
-    top: 140px;
-    text-align: center;
-  }
-}
-
-#grid {
-  
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 12rem;
-  }
-
-.box1 {
-  /* background-color: brown; */
-  width: 30%;
-  text-align: end;
-  padding: 20px 70px 20px 20px;
-
-  
-}
-.box2 {
-  /* background-color: cadetblue; */
-  width: 50%;
-  padding: 20px;
-}
-.box2 h1 {
-  font-size: 18pt;
-  
-}
-.fa {
-  color: orange;
-  
-}
